@@ -16,6 +16,10 @@ header{
     background-color: #FF6900;
     width: 100%;    
     padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .header-container{    
@@ -40,6 +44,10 @@ nav a{
 
 
 /* main rules */
+main{
+    margin-top: 130px;
+}
+
 .row{
     margin: 50px 0;
     display: flex;
