@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .header-container, main, .footer-container{
@@ -10,12 +9,10 @@
     margin: 20px auto;
 }
 
-
 /* header rules */
 header{
     background-color: #FF6900;
     width: 100%;    
-    padding: 5px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,9 +37,6 @@ nav a{
     height: auto;
 }
 
-
-
-
 /* main rules */
 main{
     margin-top: 130px;
@@ -59,8 +53,21 @@ main{
     position: relative;
 }
 
+.col:hover .product-second-image{
+    display: inline-block;
+}
+
 .product-img{
-   width: 300px;
+   width: 350px;
+}
+
+.product-second-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    display: none;
+    z-index: 10;
 }
 
 .red-price{
@@ -72,6 +79,7 @@ main{
     position: absolute;
     bottom: 100px;
     left: 0;
+    z-index: 20;
 }
 
 .label{
@@ -95,9 +103,8 @@ main{
     position: absolute;
     top: 10px;
     right: 0;
+    z-index: 20;
 }
-
-
 
 /* footer rules */
 footer{
